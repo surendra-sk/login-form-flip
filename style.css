@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* font-family: sans-serif; */
+    background-image: url(/TEST1.jpg);
+    background-position:bottom ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 100px; */
+}
+.card{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: black;
+    background: transparent;
+    width: 420px;
+    height: 590px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.5);
+    perspective: 1000px;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: rotateY(180deg); */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front,.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* padding: 50px; */
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card-front h1{
+    text-align: start;
+    font-size: 30px;
+    margin: 20px;
+}
+.card-back h1{
+    text-align: start;
+    font-size: 30px;
+    margin: 20px;
+}
+.card-front #name{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 19%;
+    left: 1%;
+}
+.card-back #email{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 22%;
+    left: 1%;
+}
+.card-front #email{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 32%;
+    left: 1%;
+}
+.card-front #pass1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 44%;
+    left: 1%;
+}
+.card-back #pass1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 36%;
+    left: 1%;
+}
+.card-front #pass2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 57%;
+    left: 1%;
+}
+
+.card-front .input-box{
+    margin-left: 10px;
+    width: 85%;
+    background: transparent;
+    border: 0px solid black;
+    height: 25px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 22px;
+    /* margin-bottom: 40px; */
+    margin-top: 50px;
+    margin-left: 50px;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+}
+.card-back .input-box{
+    margin-left: 10px;
+    width: 85%;
+    background: transparent;
+    border: 0px solid black;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 22px;
+    /* margin-bottom: 40px; */
+    margin-top: 50px;
+    margin-left: 50px;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+}
+
+
+
+::placeholder{
+    color: black;
+}
+
+.sumbit-btn{
+    width: 96%;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    background: transparent;
+    border: 1px solid black;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    margin: 35px 10px 0px 10px ;
+}
+
+
+.sumbit-btn:hover{
+    background: grey;
+}
+/* .card-front a{ */
+    /* top: 50%; */
+    /* text-decoration: none; */
+    /* display: block; */
+    /* text-align: end; */
+    /* font-size: 20px; */
+    /* margin: 75px 12px 0 0; */
+/* } */
+
+form #forgot{
+    position: absolute;
+    left: 62%;
+    color: black;
+    top: 68%;
+    text-decoration: none;
+}
+.card-back  #forgot{
+    position: absolute;
+    left: 62%;
+    color: black;
+    top: 68%;
+    text-decoration: none;
+}
+.card #rem{
+    position: absolute;
+   left: 5%;
+   top: 68%;
+   font-size: 20px;
+   color: black;
+     
+}
+.card #remback{
+    position: absolute;
+   left: 5%;
+   top: 68%;
+   font-size: 20px;
+   color: black;
+     
+}
+.card #accountregister{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 35px;
+    color: black;
+}
+.btn{
+    position: absolute;
+    top: 85%;
+    left: 70%;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+}
+.btn:hover{
+    background: grey;
+}
